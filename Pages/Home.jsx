@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../Component/Portfolio/Footer/Footer';
+import Footer from '../Component/Footer/Footer';
 import Navbar from '../Component/Navbar';
 import Hero from '../Component/Hero';
 import ProjectCard from '../Component/ProjectCard';
@@ -10,9 +10,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-    
-        <ProjectCard />
-      
+    <ProjectCard />
       <About />
       <Footer />
     </>

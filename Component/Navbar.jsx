@@ -11,19 +11,19 @@ const Navbar = () => {
     setTimeout(() => setTriggerAnimation(false), 1000);
   };
 
-  const linkClass = ({ isActive }) =>
+  const linkClass = ({ isActive }) => 
     isActive
       ? 'bg-black text-white hover:bg-gray-700 p-2 rounded-md px-2 py-2'
       : 'text-white hover:bg-gray-700 hover:text-white p-2 rounded-md px-2 py-2';
 
   return (
-    <nav className='relative sticky top-0 bg-black/90 border-b border-blue-950 z-50 h-20 overflow-hidden'>
+    <nav className='relative sticky top-0 bg-black/90 border-b border-blue-950 z-50 h-20 overflow-hidden w-full'>
     <ParticlesBackground />
     <div className='relative z-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
       <div className='flex h-20 items-center justify-between'>
         {/* your nav content here */}
         <NavLink to='/' className='flex flex-shrink-0 items-center mr-4'>
-              <span className='text-white text-2xl font-bold ml-2'>
+              <span className='text-white text-2xl font-bold ml-2 absolute left-0 pr-6 flex'>
                 ThaGreat II
               </span>
             </NavLink>
